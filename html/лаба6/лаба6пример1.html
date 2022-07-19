@@ -1,0 +1,25 @@
+<html>
+    <head>
+<style type='text/css'>
+@-webkit-keyframes anim {
+0% {margin-left:3px;background: linear-gradient(gray, blue);border:3px double yellow;}
+30% {margin-left:3px;background: linear-gradient(green, white);border:5px  red;}
+60% {margin-left:500px;background: radial-gradient(orange, yellow);border:7px double white;}
+100% {margin-left:3px;background: radial-gradient(red, black);border:10px double black;}
+}
+#wrap1 {
+border:2px #000 solid;
+background-color:#7F0055;
+height:100px;
+width:100px;
+font-size:2em;
+animation:anim 6s 3;
+-webkit-animation:anim 6s 3;
+}
+
+</style>
+</head>
+<body>
+<div id="wrap1"></div>
+</body>
+</html>

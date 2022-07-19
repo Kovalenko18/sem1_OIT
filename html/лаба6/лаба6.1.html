@@ -1,0 +1,78 @@
+<html>
+
+    <style>
+        body{
+            background-image: url(фон.jpg);
+            background-size: 1980px;
+        }
+.car{
+    width: 400px;
+    position: absolute;
+    left: 51.5%;
+    bottom: 120px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.car img{
+    width: 99%;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.wheel{
+    left: 50%;
+    position: absolute;
+    bottom: 171px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.wheel img{
+    width: 65px;
+    height: 65px;
+    animation: wheel 1s linear infinite;
+}
+
+.back-wheel{
+    left: -146px;
+    position: absolute;
+}
+.front-wheel{
+    left: 100px;
+    position: absolute;
+}
+
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+</style>
+<body>
+    
+
+      
+        <div class="car">
+            <img src="car1.png" alt="">
+        </div>
+
+        <div class="wheel">
+            <img src="wheel.png" alt="" class="back-wheel">
+            <img src="wheel.png" alt="" class="front-wheel">
+        </div>
+  
+</body>
+</html>
